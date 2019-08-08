@@ -238,12 +238,12 @@ class delay_probe(app_manager.RyuApp):
                     break
 
 
-###################################################################################
+###########################################################################################
 # Class for handling LLDP Packets picked up from ryu/topology/switches.py
-# TODO: 1. Modify the sending of lldp_packet so that it contains dpid, port_no, and queue
-#       2. Modify lldp_parse() to actually parse TLV, which contains the 
-#          mark of our delay probe packet  
-####################################################################################
+# 1. Modify the sending of lldp_packet so that it contains dpid, port_no, and queue
+# 2. Modify lldp_parse() to actually parse TLV, which contains the 
+#    mark of our delay probe packet  
+###########################################################################################
 
 class LLDPPacket(object):
     # make a LLDP packet for link discovery.
