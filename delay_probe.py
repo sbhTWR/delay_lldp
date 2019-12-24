@@ -1,4 +1,8 @@
 
+"""
+Ryu Controller script for measuring delay through LLDP delay probe.
+@author     Shubham Tiwari <f2016935@pilani.bits-pilani.ac.in>
+"""
 import struct 
 import logging
 import six
